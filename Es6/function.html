@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function testing(a,b){
+            console.log("a :"+a);
+            console.log("b :"+b);
+            let c=a+b;    // logical implementation
+            return c;
+        }
+//normal js function
+        let val=testing(10,23)
+        alert("value return : "+val)
+//ES6 arrow function
+        let val1=(a,b)=>{
+            console.log("a :"+a);
+            console.log("b :"+b);
+            let c=a+b;
+            return c;
+        }
+        alert("value return : "+val1(10,35));
+//const function
+        const oddoreven = (n)=>{return n%2===0}
+        alert("odd or even numbers : "+oddoreven(11));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
